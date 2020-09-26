@@ -1,24 +1,40 @@
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Style Page</title>
 
-/* table {
-    border-style: hidden;
-    border-collapse: collapse;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd; */
 
-<style>
-    .table.dataframe-striped {
-        display: inside;
-    }
+h2 {
+    margin-top: 15px;
+    font: "Courier New", Courier, monospace;
+    color: rgb(76, 160, 149);
+    margin-bottom: 15px;
+}
 
-    h2 {
-        margin-top: 15px;
-        font: "Courier New", Courier, monospace;
-        color: rgb(30, 172, 124);
-        margin-bottom: 15px;
-    }
+h3 {
+    margin-top: 15px;
+    font: "Courier New", Courier, monospace;
+    color: rgb(76, 160, 149);
+    margin-bottom: 15px;
+    text-align: center;
+}
 
-</style>
+p {
+    font-size:20px;
+}
+
+
+.jumbotron {
+    background-color: rgb(210, 211, 210);
+}
+
+
+div {
+    padding: 10px;
+}
+
+
+.box {
+    height: 400px;
+    padding: 20px;
+    color: #fff;
+    background: deepskyblue;
+}
+
+

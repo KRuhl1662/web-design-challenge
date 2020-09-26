@@ -2,10 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- What is this? -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Max Temp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="landing_page_KR.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="../index.html" class = "btn btn-info">Latitude</a>
+      <!-- <button type="button" class="btn btn-info"> Latitude href="../index.html"</button> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="max_temp_KR.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity_KR.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness_KR.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind_speed_KR.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparisons_KR.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data_page_KR.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class = "container-fluid">
+      <div class = "jumbotron">
+        <div class="row">
+          <div class="col-7 col-xs-12">
+            <div class="card">
+              <h2>Max Temperature</h2>
+              <img class="card-img-top" src="Resources/assets/images/Fig1.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">As expected the weather becomes increasingly warmer as one approaches the equator. (O Deg Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This is due to the tilt of the earth at this time of year.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 col-xs-12">
+            <div class = "card">
+              <h2>Visualizations</h2> 
+              <hr>
+              <section>
+                <!-- Took out the height because it warped the image -->
+                  <a target="_blank" href="Resources/assets/images/Fig1.png">
+                    <img src="Resources/assets/images/Fig1.png" style="float:left" height="200">
+                  <a target="_blank" href="Resources/assets/images/Fig2.png">
+                    <img src="Resources/assets/images/Fig2.png" style="float:left" height="200">
+                  <a target="_blank" href="Resources/assets/images/Fig3.png">
+                    <img src="Resources/assets/images/Fig3.png" style="float:left" height="200">
+                  <a target="_blank" href="Resources/assets/images/Fig4.png">
+                    <img src="Resources/assets/images/Fig4.png" style="float:left"  height="200">
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
     
 </body>
 </html>
